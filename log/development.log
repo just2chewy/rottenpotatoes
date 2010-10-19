@@ -8060,3 +8060,10 @@ Processing MoviesController#index (for 127.0.0.1 at 2010-10-18 17:25:21) [GET]
 Rendering template within layouts/movies
 Rendering movies/index
 Completed in 28ms (View: 19, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-18 18:30:23) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 68ms (View: 56, DB: 1) | 200 OK [http://localhost/]
