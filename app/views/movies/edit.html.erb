@@ -1,0 +1,32 @@
+<h1>Editing movie</h1>
+
+<% form_for(@movie) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :rating %><br />
+    <%= f.select :rating, "<option>G</option>
+	<option>PG</option>
+	<option>PG-13</option>
+	<option>R</option>
+	<option>NC-17</option>"%>
+  </p>
+  <p>
+    <%= f.label :released_on %><br />
+    <%= f.datetime_select(:released_on, :discard_hour=> true)%>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @movie %> |
+<%= link_to 'Back', movies_path %>

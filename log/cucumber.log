@@ -1,0 +1,494 @@
+# Logfile created on Sun Oct 17 15:47:02 -0700 2010REQUESTING PAGE: GET /movie/new with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-17 15:56:59) [GET]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-17 18:52:01) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 6048ms (View: 6044, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-17 21:26:50) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 6232ms (View: 6228, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-17 21:26:56) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-17 21:26:56) [GET]
+  Parameters: {"id"=>"results"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 21:26:56) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-17 21:26:56) [GET]
+  Parameters: {"id"=>"results"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 21:26:56) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-17 21:31:06) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 6312ms (View: 6309, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies with {"commit"=>"Search", "movie"=>{"title"=>"District 9"}} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-17 21:31:13) [POST]
+  Parameters: {"commit"=>"Search", "movie"=>{"title"=>"District 9"}}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'District 9') LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://www.example.com/movies]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-17 21:31:13) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies with {"commit"=>"Search", "movie"=>{"title"=>"qwertyuiop"}} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-17 21:31:13) [POST]
+  Parameters: {"commit"=>"Search", "movie"=>{"title"=>"qwertyuiop"}}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'qwertyuiop') LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 61ms (View: 57, DB: 0) | 200 OK [http://www.example.com/movies]
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-17 21:31:13) [GET]
+  Parameters: {"id"=>"results"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 21:31:13) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-17 21:31:13) [GET]
+  Parameters: {"id"=>"results"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 21:31:13) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:07:50) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 6147ms (View: 6143, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:07:56) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 52ms (View: 51, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:07:56) [GET]
+  Parameters: {"id"=>"results"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:07:56) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:07:56) [GET]
+  Parameters: {"id"=>"results"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:07:56) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:09:58) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 6046ms (View: 6043, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:10:04) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1273ms (View: 4, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:10:05) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:10:05) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"}
+Redirected to http://www.example.com/movies/new
+Completed in 350ms (DB: 0) | 302 Found [http://www.example.com/movies/results]
+REQUESTING PAGE: GET http://www.example.com/movies/new with {} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:10:05) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:10:05) [GET]
+  Parameters: {"id"=>"results"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:10:05) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:10:05) [GET]
+  Parameters: {"id"=>"results"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:10:05) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:11:40) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 5899ms (View: 5895, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:11:46) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1443ms (View: 4, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:11:48) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:11:48) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"}
+Redirected to http://www.example.com/movies/new
+Completed in 355ms (DB: 0) | 302 Found [http://www.example.com/movies/results]
+REQUESTING PAGE: GET http://www.example.com/movies/new with {} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:11:48) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:11:48) [GET]
+  Parameters: {"id"=>"results"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:11:48) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:11:48) [GET]
+  Parameters: {"id"=>"results"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:11:48) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:15:43) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 5908ms (View: 5904, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:15:49) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1191ms (View: 4, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:15:50) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:15:50) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"}
+Redirected to http://www.example.com/movies/new
+Completed in 351ms (DB: 0) | 302 Found [http://www.example.com/movies/results]
+REQUESTING PAGE: GET http://www.example.com/movies/new with {} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:15:51) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:15:51) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:15:51) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1225ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: GET /movies/results with {} and HTTP headers {}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:15:52) [GET]
+  Parameters: {"id"=>"results"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 17:15:52) [GET]
+  Parameters: {"id"=>"results"}
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:19:00) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 6021ms (View: 6017, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:19:06) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1400ms (View: 4, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:19:07) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:19:07) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"}
+Redirected to http://www.example.com/movies/new
+Completed in 354ms (DB: 0) | 302 Found [http://www.example.com/movies/results]
+REQUESTING PAGE: GET http://www.example.com/movies/new with {} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:19:07) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:19:07) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:19:07) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1520ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: POST /movies with {"commit"=>"Create", "id"=>"597"} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-18 17:19:09) [POST]
+  Parameters: {"commit"=>"Create", "id"=>"597"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Titanic') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "released_on", "updated_at", "description") VALUES('PG-13', '2010-10-19 00:19:10', 'Titanic', '1997-12-19 00:00:00', '2010-10-19 00:19:10', 'Titanic is the blockbuster film from James Cameron starring Leonardo DiCaprio and Kate Winslet as the love pair on the doomed first Titanic trip across the Atlantic Ocean. Commercially the film became the most successful film of all time.')[0m
+Redirected to http://www.example.com/movies/1
+Completed in 1160ms (DB: 1) | 302 Found [http://www.example.com/movies]
+REQUESTING PAGE: GET http://www.example.com/movies/1 with {} and HTTP headers {"HTTP_REFERER"=>"/movies"}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:19:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/1]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:19:10) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:19:10) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1204ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: POST /movies with {"commit"=>"Create", "id"=>"0"} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-18 17:19:11) [POST]
+  Parameters: {"commit"=>"Create", "id"=>"0"}
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 691ms (View: 3, DB: 0) | 200 OK [http://www.example.com/movies]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:21:58) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 5942ms (View: 5938, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:22:04) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1256ms (View: 4, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:22:05) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:22:05) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"}
+Redirected to http://www.example.com/movies/new
+Completed in 287ms (DB: 0) | 302 Found [http://www.example.com/movies/results]
+REQUESTING PAGE: GET http://www.example.com/movies/new with {} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:22:06) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:22:06) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:22:06) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1326ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: POST /movies with {"commit"=>"Create", "id"=>"597"} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-18 17:22:07) [POST]
+  Parameters: {"commit"=>"Create", "id"=>"597"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Titanic') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "released_on", "updated_at", "description") VALUES('PG-13', '2010-10-19 00:22:08', 'Titanic', '1997-12-19 00:00:00', '2010-10-19 00:22:08', 'Titanic is the blockbuster film from James Cameron starring Leonardo DiCaprio and Kate Winslet as the love pair on the doomed first Titanic trip across the Atlantic Ocean. Commercially the film became the most successful film of all time.')[0m
+Redirected to http://www.example.com/movies/1
+Completed in 1066ms (DB: 2) | 302 Found [http://www.example.com/movies]
+REQUESTING PAGE: GET http://www.example.com/movies/1 with {} and HTTP headers {"HTTP_REFERER"=>"/movies"}
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-18 17:22:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/1]
+REQUESTING PAGE: GET /movies/new with {} and HTTP headers {}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:22:08) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]
+REQUESTING PAGE: POST /movies/results with {"commit"=>"Search", "title"=>"Titanic"} and HTTP headers {"HTTP_REFERER"=>"/movies/new"}
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-18 17:22:08) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Titanic"}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1193ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/results]
+REQUESTING PAGE: POST /movies with {"commit"=>"Create", "id"=>"0"} and HTTP headers {"HTTP_REFERER"=>"/movies/results"}
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-18 17:22:09) [POST]
+  Parameters: {"commit"=>"Create", "id"=>"0"}
+Redirected to http://www.example.com/movies/new
+Completed in 470ms (DB: 0) | 302 Found [http://www.example.com/movies]
+REQUESTING PAGE: GET http://www.example.com/movies/new with {} and HTTP headers {"HTTP_REFERER"=>"/movies"}
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-18 17:22:10) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/movies/new]

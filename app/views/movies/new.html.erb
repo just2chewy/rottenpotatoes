@@ -1,0 +1,9 @@
+<h1>New movie</h1>
+
+<% form_tag(:action=>"results") do %>
+	<%= label_tag(:title, "Search for:") %>
+  	<%= text_field_tag(:title) %>
+  	<%= submit_tag("Search") %>
+<% end %>
+
+<%= link_to 'Back', movies_path %>

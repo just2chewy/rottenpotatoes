@@ -1,0 +1,8 @@
+<h1>Suggested Movies</h1>
+<p>
+	<% form_tag(:action=>"create") do %>
+	<%= select_tag (:id, options_for_select(@titles)) %>
+	<%= submit_tag("Create") %>
+	<% end %>
+</p>
+<%= link_to 'Back', movies_path %>
