@@ -43,40 +43,27 @@ class MoviesController < ApplicationController
 
   # POST /movies
   # POST /movies.xml
+  def createOriginal
+    @movie = Movie.new(params[:movie])
+
+    respond_to do |format|
+      if @movie.save
+        format.html { redirect_to(@movie, :notice => 'Movie was successfully created.') }
+        format.xml  { render :xml => @movie, :status => :created, :location => @movie }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @movie.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # POST /movies
+  # POST /movies.xml
   def create
     @name2 = 0
     @id = params[:id]
-
-    attributes = {:title => 'dummy',
-       :overview => 'dummy',
-       :scores => 'dummy',
-       :rating => 'dummy',
-       :released_on => 'dummy',
-       :genre => 'dummy'}
     
-    doc = Hpricot(open("http://api.themoviedb.org/2.1/Movie.getInfo/en/xml/881611f82cfe7331c17c5156d380f8ad/" + @id))
-    doc.search("//movie").each do |item|   
-      name = (item/"name").inner_html
-      description = (item/"overview").inner_html
-      scores = (item/"rating").inner_html
-      rating = (item/"certification").inner_html
-      released_on = (item/"released").inner_html
-      categories = (item/"categories"/"category")
-      genre = ""
-      categories.each do |category|
-        genre << category.attributes["name"] + ", "
-      end
-      
-      genre = genre[0, genre.length()-2]
-      
-      attributes = {
-       :title => name,
-       :overview => description,
-       :scores => scores,
-       :rating => rating,
-       :released_on => released_on,
-       :genre => genre}
-    end
+    attributes = Tmdb.getAttributes(@id)
     
     @movie = Movie.new(attributes) 
        
@@ -122,18 +109,8 @@ class MoviesController < ApplicationController
   def results
     @movie = Movie.new
     @title = params[:title];
-    
-    #get list of titles from TMDb
-    @titles = Array.[]
-    
-    doc = Hpricot(open("http://api.themoviedb.org/2.1/Movie.search/en/xml/881611f82cfe7331c17c5156d380f8ad/" + @title))
-    doc.search("//movie").each do |item| 
-      name = (item/"name").inner_html
-      id = (item/"id").inner_html
-      @titles << [name,id]
-    end
-    
-    @titles = @titles[0,5]
+    @titles = Tmdb.getTitles(@title)   
+   
     @titles << ['None of these', 0]
     
     respond_to do |format|

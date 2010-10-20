@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'tmdb'
 
 describe MoviesController do
 
@@ -12,7 +13,7 @@ describe MoviesController do
       get :index
       assigns[:movies].should == [mock_movie]
     end
-  end
+  end	
 
   describe "GET show" do
     it "assigns the requested movie as @movie" do
@@ -43,13 +44,13 @@ describe MoviesController do
     describe "with valid params" do
       it "assigns a newly created movie as @movie" do
         Movie.stub(:new).with({'these' => 'params'}).and_return(mock_movie(:save => true))
-        post :create, :movie => {:these => 'params'}
+        post :createOriginal, :movie => {:these => 'params'}
         assigns[:movie].should equal(mock_movie)
       end
 
       it "redirects to the created movie" do
         Movie.stub(:new).and_return(mock_movie(:save => true))
-        post :create, :movie => {}
+        post :createOriginal, :movie => {}
         response.should redirect_to(movie_url(mock_movie))
       end
     end
@@ -57,13 +58,13 @@ describe MoviesController do
     describe "with invalid params" do
       it "assigns a newly created but unsaved movie as @movie" do
         Movie.stub(:new).with({'these' => 'params'}).and_return(mock_movie(:save => false))
-        post :create, :movie => {:these => 'params'}
+        post :createOriginal, :movie => {:these => 'params'}
         assigns[:movie].should equal(mock_movie)
       end
 
       it "re-renders the 'new' template" do
         Movie.stub(:new).and_return(mock_movie(:save => false))
-        post :create, :movie => {}
+        post :createOriginal, :movie => {}
         response.should render_template('new')
       end
     end
@@ -128,4 +129,63 @@ describe MoviesController do
     end
   end
 
+  describe "submitting valid form" do
+    it "should add an entry to the database" do
+	  attributes = {:title => "Titanic", :rating => "R", :overview => "A tragic story about a boat",
+		:released_on => "1987-11-06 00:00:00", :scores => "5.5", :genre => "drama"}
+	  
+	  movie = Movie.new(attributes)
+	  Movie.stub(:new).and_return(movie)
+	  
+	  Movie.stub(:find).and_return(movie)
+	  post :createOriginal, :movie => attributes
+	  assigns[:movie].should equal(movie)
+	end
+  end
+  
+  
+  describe "interfacing with tmdb" do
+    before(:each) do
+	  attributes1 = {:title => "Titanic", :rating => "R", :overview => "A tragic story about a boat",
+		:released_on => "1987-11-06 00:00:00", :scores => "5.5", :genre => "drama"}
+	  attributes2 = {:title => "Train", :rating => "PG-13", :overview => "A movie about a train",
+		:released_on => "1987-11-06 00:00:00", :scores => "5.5", :genre => "drama"}
+	  attributes3 = {:title => "Transformers", :rating => "PG", :overview => "A movie about transforming",
+		:released_on => "1987-11-06 00:00:00", :scores => "5.5", :genre => "drama"}
+	  attributes4 = {:title => "Tarpit", :rating => "R", :overview => "What is a tarpit?",
+		:released_on => "1987-11-06 00:00:00", :scores => "5.5", :genre => "drama"}
+	  attributes5 = {:title => "Tankfighters", :rating => "G", :overview => "Children's film about tankfighters",
+		:released_on => "1987-11-06 00:00:00", :scores => "5.5", :genre => "drama"}
+	  @movie1 = Movie.new(attributes1)
+	  movie2 = Movie.new(attributes2)
+	  movie3 = Movie.new(attributes3)
+	  movie4 = Movie.new(attributes4)
+	  movie5 = Movie.new(attributes5)
+	  movieList = [@movie1, movie2, movie3, movie4, movie5]
+	  
+	  Tmdb.stub(:getTitles).and_return(["Titanic", "Train", "Transformers", "Tarpit", "Tankfighters"])
+	  Tmdb.stub(:getAttributes).and_return(attributes1)
+	  Movie.stub(:new).and_return(@movie1)
+	  Movie.stub(:find).and_return(@movie1)
+	end
+  
+  it "should get 5 movies when requesting movies from tmdb" do
+  	  post :results, :title => "transformers"
+  	  results = assigns[:titles]
+  	  results.first.should == ("Titanic")
+  	  results.size.should equal(6)
+    end
+	  
+	it "should add a movie from tmdb to the database" do
+	  post :create, :id => 2
+	  assigns[:movie].should equal(@movie1)
+    end
+	  
+	it "should flash Movie not found and go back to the search page" do
+	  Tmdb.stub(:getTitles).and_return([])
+	  post :results, :title => "blahblah"
+	  response.should redirect_to(new_movie_path)
+    end
+  
+  end	  
 end
