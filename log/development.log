@@ -8062,8 +8062,1856 @@ Rendering movies/index
 Completed in 28ms (View: 19, DB: 1) | 200 OK [http://localhost/movies]
 
 
-Processing MoviesController#index (for 127.0.0.1 at 2010-10-18 18:30:23) [GET]
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:15:20) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 6271ms (View: 6260, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20100912222210)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movies")[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:15:45) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:16:44) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:16:47) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Justin", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 920ms (View: 10, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:16:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"20409"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: overview):
+  app/controllers/movies_controller.rb:78:in `new'
+  app/controllers/movies_controller.rb:78:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20100912222210)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movies")[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:17:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"20409"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: overview):
+  app/controllers/movies_controller.rb:78:in `new'
+  app/controllers/movies_controller.rb:78:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (105.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20100912222210)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "movies"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100912222210'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20100912222210)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "overview" text, "scores" varchar(255), "rating" varchar(255), "released_on" datetime, "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100912222210')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movies")[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:19:43) [GET]
   [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
 Rendering template within layouts/movies
 Rendering movies/index
-Completed in 68ms (View: 56, DB: 1) | 200 OK [http://localhost/]
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:19:53) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:19:55) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Redirected to http://localhost:3000/movies/new
+Completed in 483ms (DB: 0) | 302 Found [http://localhost/movies/results]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:19:56) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:19:58) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Associate Product Manager Intern", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.themoviedb.org/2.1/Movie.search/en/xml/881611f82cfe7331c17c5156d380f8ad/Associate Product Manager Intern):
+  C:/Ruby187/lib/ruby/1.8/uri/common.rb:436:in `split'
+  C:/Ruby187/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/controllers/movies_controller.rb:126:in `results'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:20:07) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1250ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:20:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformations') LIMIT 1[0m
+
+NoMethodError (undefined method `yaml_tag_subclasses?' for Hpricot::Elem:Class):
+  C:/Ruby187/lib/ruby/1.8/yaml/tag.rb:69:in `taguri'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:16:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:15:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `node_export'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `add'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `each'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `seq'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:107:in `to_yaml'
+  app/controllers/movies_controller.rb:81:in `create'
+  app/controllers/movies_controller.rb:80:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20100912222210)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "movies"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100912222210'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMovies (20100912222210)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "overview" text, "scores" varchar(255), "rating" varchar(255), "released_on" datetime, "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100912222210')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("movies")[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:26:55) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:26:58) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:27:01) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1365ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:27:03) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1504ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:27:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformations') LIMIT 1[0m
+
+NoMethodError (undefined method `yaml_tag_subclasses?' for Hpricot::Elem:Class):
+  C:/Ruby187/lib/ruby/1.8/yaml/tag.rb:69:in `taguri'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:16:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:15:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `node_export'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `add'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `each'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `seq'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:107:in `to_yaml'
+  app/controllers/movies_controller.rb:81:in `create'
+  app/controllers/movies_controller.rb:80:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:28:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformations') LIMIT 1[0m
+
+NoMethodError (undefined method `yaml_tag_subclasses?' for Hpricot::Elem:Class):
+  C:/Ruby187/lib/ruby/1.8/yaml/tag.rb:69:in `taguri'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:16:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:15:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `node_export'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `add'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `each'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `seq'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:107:in `to_yaml'
+  app/controllers/movies_controller.rb:78:in `create'
+  app/controllers/movies_controller.rb:77:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:29:37) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:29:38) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:29:41) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Justin", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 763ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:29:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"42609"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Justine') LIMIT 1[0m
+  [4;35;1mMovie Create (2.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('', '2010-10-20 01:29:43', 'Justine', 'In Alexandria, in 1938, Darley, a young British schoolmaster and poet, makes friends through Pursewarden, the British consular officer, with Justine, the beautiful and mysterious wife of a Coptic banker. He observes the affairs of her heart and incidentally discovers that she is involved in a plot against the British, meant to arm the Jewish underground in Palestine. The plot finally fails, Justine is sent to jail and Darley decides to return to England.', '0.0', '1969-01-01 00:00:00', '2010-10-20 01:29:43', 'Crime')[0m
+Redirected to http://localhost:3000/movies/1
+Completed in 451ms (DB: 2) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:29:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+
+ActionView::TemplateError (undefined method `description' for #<Movie:0x8211c60>) on line #8 of app/views/movies/show.html.erb:
+5: 
+6: <p>
+7:   <b>Description:</b>
+8:   <%=h @movie.description %>
+9: </p>
+10: 
+11: <p>
+
+    app/views/movies/show.html.erb:8
+    app/controllers/movies_controller.rb:22:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:32:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/movies/1]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:32:19) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+
+ActionView::TemplateError (undefined method `genres' for #<Movie:0x8369b68>) on line #20 of app/views/movies/index.html.erb:
+17: 	<td><%=h movie.scores %></td>
+18:     <td><%=h movie.rating %></td>
+19:     <td><%=h movie.released_on %></td>
+20: 	<td><%=h movie.genres %></td>
+21:     <td><%= link_to 'Show', movie %></td>
+22:     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+23:     <td><%= link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/movies/index.html.erb:20
+    app/views/movies/index.html.erb:13:in `each'
+    app/views/movies/index.html.erb:13
+    app/controllers/movies_controller.rb:11:in `index'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:32:38) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:34:34) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#edit (for 127.0.0.1 at 2010-10-19 18:34:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+Completed in 34ms (View: 25, DB: 1) | 200 OK [http://localhost/movies/1/edit]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:34:42) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:37:15) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:37:17) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1621ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:37:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+
+NameError (undefined local variable or method `genre' for #<MoviesController:0x85d6b98>):
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:65:in `each'
+  app/controllers/movies_controller.rb:65:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:37:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformations') LIMIT 1[0m
+
+NoMethodError (undefined method `yaml_tag_subclasses?' for Hpricot::Elem:Class):
+  C:/Ruby187/lib/ruby/1.8/yaml/tag.rb:69:in `taguri'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:16:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:15:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `node_export'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `add'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `each'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `seq'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:107:in `to_yaml'
+  app/controllers/movies_controller.rb:78:in `create'
+  app/controllers/movies_controller.rb:77:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:37:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformations') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('', '2010-10-20 01:37:57', 'Transformations', 'No overview found.', '5.5', '1988-09-02 00:00:00', '2010-10-20 01:37:57', '
+ ')[0m
+Redirected to http://localhost:3000/movies/2
+Completed in 605ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:37:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 2) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/movies/2]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:38:12) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:38:18) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"2"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 2) [0m
+  [4;35;1mMovie Destroy (2.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/movies
+Completed in 97ms (DB: 2) | 302 Found [http://localhost/movies/2]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:38:18) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:38:20) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 1) [0m
+  [4;36;1mMovie Destroy (1.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/movies
+Completed in 103ms (DB: 1) | 302 Found [http://localhost/movies/1]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:38:21) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:40:35) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:40:38) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+
+SocketError (getaddrinfo: The storage control blocks were destroyed. ):
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `open'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby187/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  C:/Ruby187/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:542:in `start'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:518:in `open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:30:in `open'
+  app/controllers/movies_controller.rb:126:in `results'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (99.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:41:15) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+
+SocketError (getaddrinfo: The storage control blocks were destroyed. ):
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `open'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby187/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  C:/Ruby187/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:542:in `start'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:518:in `open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:30:in `open'
+  app/controllers/movies_controller.rb:123:in `results'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:41:18) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:41:19) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:41:22) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+
+SocketError (getaddrinfo: The storage control blocks were destroyed. ):
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `open'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby187/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  C:/Ruby187/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  C:/Ruby187/lib/ruby/1.8/net/http.rb:542:in `start'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:518:in `open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:30:in `open'
+  app/controllers/movies_controller.rb:123:in `results'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:42:44) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1638ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:42:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+
+NameError (undefined local variable or method `genre' for #<MoviesController:0x84aaec8>):
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:65:in `each'
+  app/controllers/movies_controller.rb:65:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:43:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+
+TypeError (can't convert Hpricot::Elements into String):
+  app/controllers/movies_controller.rb:67:in `+'
+  app/controllers/movies_controller.rb:67:in `create'
+  app/controllers/movies_controller.rb:66:in `each'
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:43:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformations') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('', '2010-10-20 01:43:15', 'Transformations', 'No overview found.', '5.5', '1988-09-02 00:00:00', '2010-10-20 01:43:15', ', 
+ ')[0m
+Redirected to http://localhost:3000/movies/3
+Completed in 1297ms (DB: 2) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:43:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 3) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 19ms (View: 5, DB: 1) | 200 OK [http://localhost/movies/3]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:44:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 3) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/movies/3]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:44:35) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:44:39) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"3"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 3) [0m
+  [4;35;1mMovie Destroy (1.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/movies
+Completed in 57ms (DB: 1) | 302 Found [http://localhost/movies/3]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:44:39) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:44:40) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:44:43) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1452ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:44:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 01:44:49', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 01:44:49', '
+ <category name="Action" url="http://themoviedb.org/genre/action" id="28" type="genre" />
+ <category name="Science Fiction" url="http://themoviedb.org/genre/science-fiction" id="878" type="genre" />
+ ')[0m
+Redirected to http://localhost:3000/movies/4
+Completed in 727ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:44:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 4) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/4]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:45:06) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:46:57) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"4"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 4) [0m
+  [4;36;1mMovie Destroy (1.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/movies
+Completed in 385ms (DB: 1) | 302 Found [http://localhost/movies/4]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:46:58) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:46:59) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:47:01) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1366ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:47:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+
+NoMethodError (undefined method `inner_html' for nil:NilClass):
+  app/controllers/movies_controller.rb:67:in `create'
+  app/controllers/movies_controller.rb:66:in `each'
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:47:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;35;1mMovie Create (2.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 01:47:23', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 01:47:23', '
+ <category name="Action" url="http://themoviedb.org/genre/action" id="28" type="genre" />
+ <category name="Science Fiction" url="http://themoviedb.org/genre/science-fiction" id="878" type="genre" />
+ ')[0m
+Redirected to http://localhost:3000/movies/5
+Completed in 1276ms (DB: 3) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:47:24) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 5) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/5]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:49:43) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:49:46) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"5"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 5) [0m
+  [4;35;1mMovie Destroy (1.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/movies
+Completed in 35ms (DB: 1) | 302 Found [http://localhost/movies/5]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:49:46) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:49:47) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:49:50) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1481ms (View: 3, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:49:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"28800"}
+
+NoMethodError (undefined method `inner_html' for "":String):
+  app/controllers/movies_controller.rb:67:in `create'
+  app/controllers/movies_controller.rb:66:in `each'
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:50:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 01:50:05', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 01:50:05', ' ')[0m
+Redirected to http://localhost:3000/movies/6
+Completed in 777ms (DB: 2) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:50:06) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 6) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/6]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:51:57) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 6) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/6]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:51:59) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 6) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/6]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:52:02) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:52:05) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"6"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 6) [0m
+  [4;36;1mMovie Destroy (2.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/movies
+Completed in 49ms (DB: 2) | 302 Found [http://localhost/movies/6]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:52:05) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:53:04) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:53:05) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:53:07) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1113ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:53:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+
+TypeError (can't convert String into Array):
+  app/controllers/movies_controller.rb:67:in `+'
+  app/controllers/movies_controller.rb:67:in `create'
+  app/controllers/movies_controller.rb:66:in `each'
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:53:25) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 01:53:26', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 01:53:26', '
+ <category name="Action" url="http://themoviedb.org/genre/action" id="28" type="genre" />
+ <category name="Science Fiction" url="http://themoviedb.org/genre/science-fiction" id="878" type="genre" />
+ ')[0m
+Redirected to http://localhost:3000/movies/7
+Completed in 957ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:53:27) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 7) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/7]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:56:00) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:56:03) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"7"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 7) [0m
+  [4;36;1mMovie Destroy (1.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 7[0m
+Redirected to http://localhost:3000/movies
+Completed in 97ms (DB: 1) | 302 Found [http://localhost/movies/7]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:56:03) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:56:04) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:56:07) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1410ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:56:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 01:56:11', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 01:56:11', ' ')[0m
+Redirected to http://localhost:3000/movies/8
+Completed in 762ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:56:12) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 8) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/movies/8]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:56:28) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:56:32) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"8"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 8) [0m
+  [4;35;1mMovie Destroy (1.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/movies
+Completed in 49ms (DB: 1) | 302 Found [http://localhost/movies/8]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:56:32) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:56:33) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:56:35) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1558ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:56:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 01:56:40', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 01:56:40', '')[0m
+Redirected to http://localhost:3000/movies/9
+Completed in 889ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:56:41) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 9) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies/9]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:58:19) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 9) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/9]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 18:58:20) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 9) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/9]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:58:22) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 18:58:25) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"9"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 9) [0m
+  [4;36;1mMovie Destroy (1.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/movies
+Completed in 72ms (DB: 1) | 302 Found [http://localhost/movies/9]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 18:58:26) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 18:58:27) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 18:58:30) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1458ms (View: 3, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 18:58:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+
+NoMethodError (undefined method `yaml_tag_subclasses?' for Hpricot::Elem:Class):
+  C:/Ruby187/lib/ruby/1.8/yaml/tag.rb:69:in `taguri'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:16:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:15:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `node_export'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `add'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:110:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `each'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:109:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `seq'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:108:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:107:in `to_yaml'
+  app/controllers/movies_controller.rb:82:in `create'
+  app/controllers/movies_controller.rb:81:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:00:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (2.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 02:00:25', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 02:00:25', ' ')[0m
+Redirected to http://localhost:3000/movies/10
+Completed in 627ms (DB: 2) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:00:25) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 10) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 16ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/10]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:00:28) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:00:29) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:00:34) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1224ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:00:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+Redirected to http://localhost:3000/movies/new
+Completed in 717ms (DB: 0) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:00:40) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:00:47) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1443ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:00:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"25565"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'Transformers: Beginnings') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('', '2010-10-20 02:00:52', 'Transformers: Beginnings', 'On their home planet of Cybertron, the Autobots and Decepticons are involved in an explosive battle over the coveted AllSpark. With the fate of the universe at stake, the Autobots send it far from the reach of the ruthless Megatron, leader of the Decepticons. But there are even more surprises in store when it crash-lands on Earth.', '7.0', '1900-01-01 00:00:00', '2010-10-20 02:00:52', ' ')[0m
+Redirected to http://localhost:3000/movies/11
+Completed in 717ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:00:52) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 11) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/movies/11]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:00:56) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:00:59) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"10"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 10) [0m
+  [4;35;1mMovie Destroy (1.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/movies
+Completed in 76ms (DB: 1) | 302 Found [http://localhost/movies/10]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:01:00) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:01:04) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"11"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 11) [0m
+  [4;36;1mMovie Destroy (2.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/movies
+Completed in 50ms (DB: 2) | 302 Found [http://localhost/movies/11]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:01:04) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:01:27) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:01:28) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+
+OpenURI::HTTPError (400 Bad Request):
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:277:in `open_http'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:518:in `open'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:30:in `open'
+  app/controllers/movies_controller.rb:127:in `results'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:01:37) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1387ms (View: 3, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:01:42) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+
+NoMethodError (undefined method `inner_html' for nil:NilClass):
+  app/controllers/movies_controller.rb:65:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:02:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+
+NoMethodError (undefined method `yaml_tag_subclasses?' for Hpricot::Elem:Class):
+  C:/Ruby187/lib/ruby/1.8/yaml/tag.rb:69:in `taguri'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:16:in `to_yaml'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `call'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `emit'
+  C:/Ruby187/lib/ruby/1.8/yaml.rb:391:in `quick_emit'
+  C:/Ruby187/lib/ruby/1.8/yaml/rubytypes.rb:15:in `to_yaml'
+  app/controllers/movies_controller.rb:82:in `create'
+  app/controllers/movies_controller.rb:81:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:02:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 02:02:31', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 02:02:31', '')[0m
+Redirected to http://localhost:3000/movies/12
+Completed in 777ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:02:33) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 12) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/12]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:02:53) [GET]
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:02:55) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"12"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 12) [0m
+  [4;36;1mMovie Destroy (1.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/movies
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/movies/12]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:02:56) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:02:57) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:03:00) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1544ms (View: 3, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:03:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 02:03:05', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 02:03:05', 2)[0m
+Redirected to http://localhost:3000/movies/13
+Completed in 860ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:03:05) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 13) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/13]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:03:29) [GET]
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:03:32) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"13"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 13) [0m
+  [4;35;1mMovie Destroy (1.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/movies
+Completed in 74ms (DB: 2) | 302 Found [http://localhost/movies/13]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:03:33) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:03:34) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:03:36) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1327ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:03:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+
+TypeError (can't convert String into Integer):
+  app/controllers/movies_controller.rb:67:in `<<'
+  app/controllers/movies_controller.rb:67:in `create'
+  app/controllers/movies_controller.rb:66:in `each'
+  app/controllers/movies_controller.rb:66:in `create'
+  app/controllers/movies_controller.rb:58:in `each'
+  app/controllers/movies_controller.rb:58:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:03:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (2.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 02:03:55', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 02:03:55', 'Action Science Fiction ')[0m
+Redirected to http://localhost:3000/movies/14
+Completed in 1141ms (DB: 3) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:03:55) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 14) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/14]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:06:00) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:06:07) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"14"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 14) [0m
+  [4;36;1mMovie Destroy (2.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/movies
+Completed in 50ms (DB: 2) | 302 Found [http://localhost/movies/14]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:06:07) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:06:09) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:06:11) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1509ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:06:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;35;1mMovie Create (1.0ms)[0m   [0mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 02:06:15', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 02:06:15', 'Action, Science Fictio')[0m
+Redirected to http://localhost:3000/movies/15
+Completed in 721ms (DB: 2) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:06:16) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 15) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/15]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:06:34) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 78ms (View: 69, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:06:38) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"15"}
+  [4;36;1mMovie Load (0.0ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 15) [0m
+  [4;35;1mMovie Destroy (1.0ms)[0m   [0mDELETE FROM "movies" WHERE "id" = 15[0m
+Redirected to http://localhost:3000/movies
+Completed in 48ms (DB: 1) | 302 Found [http://localhost/movies/15]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:06:39) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:06:40) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:06:43) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"Transformers", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1278ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-10-19 19:06:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"1857"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT "movies".id FROM "movies" WHERE ("movies"."title" = 'The Transformers: The Movie') LIMIT 1[0m
+  [4;36;1mMovie Create (1.0ms)[0m   [0;1mINSERT INTO "movies" ("rating", "created_at", "title", "overview", "scores", "released_on", "updated_at", "genre") VALUES('PG', '2010-10-20 02:06:48', 'The Transformers: The Movie', 'The Transformers: The Movie is the animated film from 1986 based on the popular television series of the same name. The television series and the film were both directed by Nelson Shin.', '7.0', '1986-08-08 00:00:00', '2010-10-20 02:06:48', 'Action, Science Fiction')[0m
+Redirected to http://localhost:3000/movies/16
+Completed in 850ms (DB: 1) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-10-19 19:06:48) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 16) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/movies/16]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:06:50) [GET]
+  [4;36;1mMovie Load (1.0ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2010-10-19 19:06:54) [DELETE]
+  Parameters: {"authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk=", "id"=>"16"}
+  [4;35;1mMovie Load (0.0ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 16) [0m
+  [4;36;1mMovie Destroy (2.0ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/movies
+Completed in 45ms (DB: 2) | 302 Found [http://localhost/movies/16]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:06:55) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/movies]

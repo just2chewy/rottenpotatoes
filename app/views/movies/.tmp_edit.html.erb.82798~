@@ -8,12 +8,8 @@
     <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :overview %><br />
-    <%= f.text_area :overview %>
-  </p>
-  <p>
-    <%= f.label :scores %><br />
-    <%= f.text_field :scores %>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
   </p>
   <p>
     <%= f.label :rating %><br />
@@ -22,10 +18,6 @@
 	<option>PG-13</option>
 	<option>R</option>
 	<option>NC-17</option>"%>
-  </p>
-  <p>
-    <%= f.label :genre %><br />
-    <%= f.text_field :genre %>
   </p>
   <p>
     <%= f.label :released_on %><br />

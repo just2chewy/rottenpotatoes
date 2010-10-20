@@ -5,12 +5,7 @@
 
 <p>
   <b>Description:</b>
-  <%=h @movie.overview %>
-</p>
-
-<p>
-  <b>Scores:</b>
-  <%=h @movie.scores %>
+  <%=h @movie.description %>
 </p>
 
 <p>
@@ -23,10 +18,6 @@
   <%=h @movie.released_on %>
 </p>
 
-<p>
-  <b>Genre:</b>
-  <%=h @movie.genre %>
-</p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>

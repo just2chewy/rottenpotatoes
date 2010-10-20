@@ -3,21 +3,17 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Overview</th>
-    <th>Scores</th>
-	<th>Rating</th>
+    <th>Description</th>
+    <th>Rating</th>
     <th>Released on</th>
-	<th>Genre</th>
   </tr>
 
 <% @movies.each do |movie| %>
   <tr>
     <td><%=h movie.title %></td>
-    <td><%=h movie.overview %></td>
-	<td><%=h movie.scores %></td>
+    <td><%=h movie.description %></td>
     <td><%=h movie.rating %></td>
     <td><%=h movie.released_on %></td>
-	<td><%=h movie.genre %></td>
     <td><%= link_to 'Show', movie %></td>
     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
     <td><%= link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -13,9 +13,11 @@ ActiveRecord::Schema.define(:version => 20100912222210) do
 
   create_table "movies", :force => true do |t|
     t.string   "title"
-    t.text     "description"
+    t.text     "overview"
+    t.string   "scores"
     t.string   "rating"
     t.datetime "released_on"
+    t.string   "genre"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
