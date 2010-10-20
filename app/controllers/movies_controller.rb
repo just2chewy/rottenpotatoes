@@ -109,6 +109,7 @@ class MoviesController < ApplicationController
   def results
     @movie = Movie.new
     @title = params[:title];
+    @title = @title.gsub(/ /, "+")
     @titles = Tmdb.getTitles(@title)   
    
     @titles << ['None of these', 0]

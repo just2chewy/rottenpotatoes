@@ -10197,3 +10197,133 @@ Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
   [4;35;1mSQL (23.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100912222210')[0m
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:46:20) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:46:22) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"just you", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+
+URI::InvalidURIError (bad URI(is not URI?): http://api.themoviedb.org/2.1/Movie.search/en/xml/881611f82cfe7331c17c5156d380f8ad/just you):
+  C:/Ruby187/lib/ruby/1.8/uri/common.rb:436:in `split'
+  C:/Ruby187/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  C:/Ruby187/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/helpers/tmdb.rb:9:in `getTitles'
+  app/controllers/movies_controller.rb:112:in `results'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:46:35) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"the+matrix", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1056ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-19 19:47:44) [GET]
+  [4;35;1mMovie Load (1.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2010-10-19 19:47:45) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#results (for 127.0.0.1 at 2010-10-19 19:47:50) [POST]
+  Parameters: {"commit"=>"Search", "title"=>"The Matrix", "authenticity_token"=>"xzLgCmyfXa8rltTdnF+zSoN05IaG+NeG1rNiq2FDxYk="}
+Rendering template within layouts/movies
+Rendering movies/results
+Completed in 1050ms (View: 4, DB: 0) | 200 OK [http://localhost/movies/results]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "overview" text, "scores" varchar(255), "rating" varchar(255), "released_on" datetime, "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100912222210')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (297.0ms)[0m   [0;1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "overview" text, "scores" varchar(255), "rating" varchar(255), "released_on" datetime, "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (23.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100912222210')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "overview" text, "scores" varchar(255), "rating" varchar(255), "released_on" datetime, "genre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100912222210')[0m

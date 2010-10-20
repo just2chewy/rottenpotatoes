@@ -185,7 +185,25 @@ describe MoviesController do
 	  Tmdb.stub(:getTitles).and_return([])
 	  post :results, :title => "blahblah"
 	  response.should redirect_to(new_movie_path)
-    end
+    end  
+  end
   
-  end	  
+  describe "testing with real tmdb api" do
+    it "should get 5 movies when requesting movies from tmdb" do
+      post :results, :title => "Transformers"
+      results = assigns[:titles]
+      results.first.first.should ==("Transformations")
+      results.size.should equal(6)
+    end
+    
+    it "should add a movie from tmdb to the database" do
+      post :create, :id=>187
+      assigns[:movie].title.should ==("Sin City")
+    end
+    
+    it "should go back to the search page with no results" do
+      post :results, :title => "98r5h398san0njkdsandns081djsandadn09842niufnjdsfn03nlkjdad"
+      response.should redirect_to(new_movie_path)
+    end
+  end
 end
